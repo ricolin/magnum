@@ -1,0 +1,14 @@
+---
+upgrade:
+  - |
+    The Magnum service allow enables policies (RBAC) new defaults and scope.
+    The Default value of config options ``[oslo_policy] enforce_scope``
+    and ``[oslo_policy] oslo_policy.enforce_new_defaults`` are both ``False``.
+    We will change the default to ``True`` in the following cycle.
+
+    If you want to enable them then modify the below config options value in
+    ``magnum.conf`` file::
+
+      [oslo_policy]
+      enforce_new_defaults=True
+      enforce_scope=True
