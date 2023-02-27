@@ -1,6 +1,6 @@
-magnum_src_dir: "src/opendev.org/openstack/magnum"
+magnum_src_dir: "/home/rico/dev/rico/magnum"
 
-magnum_repository: openstackmagnum
+magnum_repository: rico
 
 # NOTE: By default, stable images are not built if they already exist.
 # Assigning dev=true property for heat container agent images means that a new
